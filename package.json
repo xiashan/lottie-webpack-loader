@@ -1,0 +1,42 @@
+{
+  "name": "@noxfed/lottie-webpack-loader",
+  "version": "1.0.0",
+  "author": "Xia Shan <xshbest@163.com>",
+  "license": "MIT",
+  "keywords": [
+    "lottie",
+    "lottie-web",
+    "assets",
+    "image",
+    "loader",
+    "webpack"
+  ],
+  "description": "Webpack Loader for json lottie-web files",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:PowerfulPony/webpack-audiosprite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PowerfulPony/lottie-web-webpack-loader/issues"
+  },
+  "homepage": "https://github.com/PowerfulPony/lottie-web-webpack-loader#readme",
+  "main": "src/index.js",
+  "files": [
+    "src/index.js"
+  ],
+  "scripts": {
+    "lint": "eslint ./src --ext .js"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-sonarjs": "^0.5.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+  }
+}
