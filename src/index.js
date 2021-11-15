@@ -1,7 +1,7 @@
 /*
  * @Author: xiashan
  * @Date: 2020-12-16 03:33:42
- * @LastEditTime: 2021-11-10 19:35:05
+ * @LastEditTime: 2021-11-15 16:39:31
  */
 const path = require('path');
 
@@ -44,11 +44,11 @@ function lottieWebpackLoader(content) {
 
   if (imageModules.length) {
     output += `
-assets.forEach((asset) => {
-  const path = asset[0];
-  const index = asset[1];
+for(let i=0; i<assets.length; i++) {
+  const path = assets[i][0];
+  const index = assets[i][1];
   data.assets[index].p = path;
-});\n`;
+}\n`;
   }
 
   output += 'module.exports = data;';
